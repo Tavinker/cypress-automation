@@ -38,3 +38,17 @@ Cypress.Commands.add('invalid_login', function(){
     cy.get('[data-test="password"]').type('invalid_pass')
     cy.get('#login-button').click()
 })
+
+Cypress.Commands.add('locked_login', function(){
+    cy.wait(2000)
+    cy.get('[data-test="username"]').type('locked_out_user')
+    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.get('#login-button').click()
+})
+
+Cypress.Commands.add('problem_login', function(){
+    cy.wait(2000)
+    cy.get('[data-test="username"]').type('problem_user')
+    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.get('#login-button').click()
+})
