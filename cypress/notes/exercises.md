@@ -21,7 +21,7 @@ Tente logar com problem_user e veja se o comportamento do site muda (pode testar
 
 
 📌 Seção 2 - Página de Produtos
-5️⃣ Valide que a lista de produtos está sendo carregada corretamente.
+5️⃣ Valide se a lista de produtos está sendo carregada corretamente.
 Após login, verifique se há exatamente 6 produtos exibidos na página (cy.get('.inventory_item')).
 
 6️⃣ Adicione um item ao carrinho e valide que o número do carrinho foi atualizado.
